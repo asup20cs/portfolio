@@ -1,43 +1,3 @@
-![Astro Sphere Lighthouse Score](_astrosphere.jpg)
-
-Astro Sphere is a static, minimalist, lightweight, lightning fast portfolio and blog theme based on my personal website.
-
-It is primarily Astro, Tailwind and Typescript, with a very small amount of SolidJS for stateful components.
-
-## 🚀 Deploy your own
-
-[![Deploy with Vercel](_deploy_vercel.svg)](https://vercel.com/new/clone?repository-url=https://github.com/markhorn-dev/astro-sphere)  [![Deploy with Netlify](_deploy_netlify.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/markhorn-dev/astro-sphere)
-
-## 📋 Features
-
-- ✅ 100/100 Lighthouse performance
-- ✅ Responsive
-- ✅ Accessible
-- ✅ SEO-friendly
-- ✅ Typesafe
-- ✅ Minimal style
-- ✅ Light/Dark Theme
-- ✅ Animated UI
-- ✅ Tailwind styling
-- ✅ Auto generated sitemap
-- ✅ Auto generated RSS Feed
-- ✅ Markdown support
-- ✅ MDX Support (components in your markdown)
-- ✅ Searchable content (posts and projects)
-
-## 💯 Lighthouse score
-![Astro Sphere Lighthouse Score](_lighthouse.png)
-
-## 🕊️ Lightweight
-All pages under 100kb (including fonts)
-
-## ⚡︎ Fast
-Rendered in ~40ms on localhost
-
-## 📄 Configuration
-
-The blog posts on the demo serve as the documentation and configuration.
-
 ## 💻 Commands
 
 All commands are run from the root of the project, from a terminal:
@@ -73,17 +33,4 @@ Theme inspired by [Paco Coursey](https://paco.me/), [Lee Robinson](https://leero
 ## 🏛️ License
 
 MIT
-
-
-# 1.0.1 Update
-
-Added ability to run dev and preview on local network.
-added npm run dev:network
-added npm run preview:network
-
-Added slightly more particle density in both light and dark mode.
-
-Added subtle dark mode star and meteor animations.
-
-Removed eslint config
 
