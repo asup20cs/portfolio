@@ -1,0 +1,103 @@
+---
+import PageLayout from "@layouts/PageLayout.astro";
+import { SITE } from "@consts"
+import StackCard from "@components/StackCard.astro";
+import Profile from "@components/Profile.astro"
+
+const stack = [
+  {
+    text: "C",
+    icon: "cpp",
+    href: "https://www.gnu.org/software/gnu-c-manual/gnu-c-manual.html"
+  },
+  {
+    text: "HTML",
+    icon: "html",
+    href: "https://developer.mozilla.org/en-US/docs/Web/HTML"
+  },
+  {
+    text: "CSS",
+    icon: "css",
+    href: "https://developer.mozilla.org/en-US/docs/Web/CSS"
+  },
+  { 
+    text: "Tailwind", 
+    icon: "tailwind", 
+    href: "https://tailwindcss.com" 
+  },
+  { 
+    text: "Astro", 
+    icon: "astro", 
+    href: "https://astro.build" 
+  },
+  {
+    text: "Figma",
+    icon: "figma",
+    href: "https://www.figma.com/"
+  },
+  {
+    text: "Amazon Web Services",
+    icon: "aws",
+    href: "https://aws.amazon.com/"
+  },
+  {
+    text: "Google Cloud Platform",
+    icon: "gcp",
+    href: "https://cloud.google.com/"
+  },
+  {
+    text: "Microsoft Azure",
+    icon: "azure",
+    href: "https://azure.microsoft.com/en-us/"
+  },
+  {
+    text: "Linux",
+    icon: "linux",
+    href: "https://www.linux.org/pages/download/"
+  },
+  {
+    text: "Bash",
+    icon: "bash",
+    href: "https://www.gnu.org/software/bash/"
+  },
+  {
+    text: "Docker",
+    icon: "docker",
+    href: "https://www.docker.com"
+  },
+  {
+    text: "Jenkins",
+    icon: "jenkins",
+    href: "https://www.jenkins.io/"
+  },
+]
+
+---
+
+<PageLayout title="About Me" description={SITE.DESCRIPTION}>
+    <section>
+        <Profile />
+    </section>
+    <!---Stack Section -->
+    <section><div class="relative bg-white dark:bg-black">
+            <div class="mx-auto max-w-screen-sm p-5 space-y-24 pb-16">
+                <section class="animate">
+                    <div class="space-y-4">
+                      <p class="font-semibold text-black dark:text-white">
+                        Tools i can work with
+                      </p>
+                      <div class="flex flex-wrap items-center gap-2 mt-5">
+                        {stack.map(item => (
+                          <StackCard 
+                            text={item.text}
+                            icon={item.icon}
+                            href={item.href}
+                          />
+                        ))}
+                      </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </section> 
+</PageLayout>
